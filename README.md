@@ -10,3 +10,5 @@
   - spring.cloud.gateway.routes[0].predicates[0]=Path=/users-ws/status-check
   - spring.cloud.gateway.routes[0].predicates[1]=Method=GET
   - spring.cloud.gateway.routes[0].filters[0]=RemoveRequestHeader=cookie
+
+  - spring,cloud.gateway.routes[0].filters[1]=RewritePath=/users-ws/status-check, /users/status-check
